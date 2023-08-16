@@ -1,117 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do Van Thanh</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/layout.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Do Van Thanh</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css//layout.css">
+  <body>
+    <header class="header desktop">
+      <h1 class="header_logo">
+        <a href="#"><img src="./images/avabio.png" alt="" /></a>
+      </h1>
+      <h2 class="header_name">Van Thanh</h2>
+      <nav>
+        <ul class="header_menu">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="footer">
+        <ul class="footer_social">
+          <li>
+            <a href="https://www.linkedin.com/in/do-van-thanh/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/dvthanh277" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/van.Thanh277" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="footer_copyright">© Van Thanh</p>
+      </div>
+    </header>
+    <div id="content">
+      <section id="home">
+        <div class="wrapper">
+          <div class="home_text" data-aos="fade-down">
+            <h2 class="home_title">
+              Hi,
+              <span class="title_style"> My name is <br />DO VAN THANH</span>
+            </h2>
+            <p class="home_subtitle">I'm a <span id="text_typing"></span></p>
+            <p class="home_thanks">Thank you for visiting my profile.</p>
+            <a href="#about" class="home_link"
+              >A little about me <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="home_image" data-aos="fade-left">
+            <img src="./images/avabio.png" alt="" />
+          </div>
+        </div>
+        <div class="home_mouse_icon">
+          <a href="#about">
+            <i class="fa-solid fa-angles-down"></i>
+          </a>
+        </div>
+      </section>
+      <section id="about">
+        <div class="wrapper" data-aos="fade-up">
+          <div class="section_title light">
+            <h2 class="section_title_bg">About me</h2>
+            <h3 class="section_title_main">About Me</h3>
+          </div>
+          <div class="section_content">
+            <div class="box1">
+              <img src="./images/ava.png" alt="" />
+            </div>
+            <div class="box2">
+              <p class="text_title">Hello !!!</p>
+              <p class="text">
+                I’m Do Van Thanh, 27 years old. I live in Vung Tau, Vietnam. I
+                graduated from Ba Ria Vung Tau University. I’m working as a
+                Frontend Developer with over 3 years experience developing
+                different websites, apps and implementing them — from landing
+                pages to big projects, mostly using
+                HTML/CSS/Javascript/ReactJS...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <div class="wrapper" data-aos="fade-up">
+          <div class="section_title light">
+            <h2 class="section_title_bg">experience</h2>
+            <h3 class="section_title_main">experience</h3>
+          </div>
+          <div class="section_content">
+            <div class="experience_box">
+              <p class="experience_time">4/2022 - Present</p>
+              <p class="experience_company">Aiara Corp</p>
+              <p class="experience_position">Frontend Developer</p>
+              <div class="experience_des">
+                <p class="main_des">Main responsibilities:</p>
+                <ul>
+                  <li>
+                    - Development website of Korea. Build a Web page from Zeplin
+                    design using Html, Css, Javascript, Sass.
+                  </li>
+                  <li>
+                    - Connect Api to update data and perform functions on the
+                    website using Vanilla JavaScript, Json
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience_box">
+              <p class="experience_time">1/2021 - 3/2022</p>
+              <p class="experience_company">Hutchison Ports SITV</p>
+              <p class="experience_position">Software Development Engineer</p>
+              <div class="experience_des">
+                <p class="main_des">Main responsibilities:</p>
+                <ul>
+                  <li>
+                    - Develop user interface using AngularJs framework, Html,
+                    Css, Jquery, Sass, Bootstrap, Json.
+                  </li>
+                  <li>- Support users, update and fix bugs.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience_box">
+              <p class="experience_time">12/2018 - 12/2020</p>
+              <p class="experience_company">SEEC Viet Nam</p>
+              <p class="experience_position">Frontend Developer</p>
+              <div class="experience_des">
+                <p class="main_des">Main responsibilities:</p>
+                <ul>
+                  <li>
+                    - Development landing page website of Japan. Build a Web
+                    page from Photoshop (Psd) files using pug, sass, jquery,
+                    php.
+                  </li>
+                  <li>
+                    - Update to the Web page the images as well as the text
+                    provided by the customer text.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience_box">
+              <p class="experience_time"></p>
+              <p class="experience_company">Freelancer</p>
+              <p class="experience_position"></p>
+              <div class="experience_des">
+                <p class="main_des">Main responsibilities:</p>
+                <ul>
+                  <li>
+                    - Build websites from designs according to client
+                    requirements
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="works">
+        <div class="wrapper" data-aos="fade-up">
+          <div class="section_title">
+            <h2 class="section_title_bg">works</h2>
+            <h3 class="section_title_main">works</h3>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="wrapper" data-aos="fade-up">
+          <div class="section_title">
+            <h2 class="section_title_bg">contact</h2>
+            <h3 class="section_title_main">contact</h3>
+          </div>
+          <form
+            action="https://formsubmit.co/dvthanh277@gmail.com"
+            method="POST"
+          >
+            <div class="form_box">
+              <input type="email" name="email" required placeholder="Email" />
+              <input type="text" name="name" required placeholder="Name" />
+            </div>
 
-</head>
+            <textarea
+              placeholder="Your Message"
+              name="message"
+              rows="10"
+              required
+            ></textarea>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://dvthanh277.github.io/resume/thanks.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
 
-<body>
-  <header class="header desktop">
-    <h1 class="header_logo">
-      <a href="#"><img src="./images/avabio.png" alt=""></a>
-    </h1>
-    <h2 class="header_name">Van Thanh</h2>
-    <nav>
-      <ul class="header_menu">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#works">WORKS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div class="footer">
-      <ul class="footer_social">
-        <li>
-          <a href="https://www.linkedin.com/in/do-van-thanh/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/dvthanh277" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/van.Thanh277" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="footer_copyright">© Van Thanh</p>
+            <button type="submit" id="submit_form">Send message</button>
+          </form>
+        </div>
+      </section>
     </div>
-  </header>
-  <div id="content">
-    <section id="home">
-      <div class="wrapper">
-        <div class="home_text" data-aos="fade-down">
-          <h2 class="home_title">Hi, <span class="title_style"> My name is <br>DO VAN THANH</span></h2>
-          <p class="home_subtitle">I'm a <span id="text_typing"></span> </p>
-          <p class="home_thanks">Thank you for visiting my profile.</p>
-          <a href="#about" class="home_link">A little about me <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="home_image" data-aos="fade-left">
-          <img src="./images/avabio.png" alt="">
-        </div>
-      </div>
-      <div class="home_mouse_icon">
-        <a href="#about">
-          <i class="fa-solid fa-angles-down"></i>
-        </a>
-      </div>
-    </section>
-    <section id="about">
-      <div class="wrapper" data-aos="fade-up">
-        <div class="section_title light">
-          <h2 class="section_title_bg">About me</h2>
-          <h3 class="section_title_main">About Me</h3>
-        </div>
-      </div>
-    </section>
-    <section id="experience">
-      <div class="wrapper" data-aos="fade-up">
-        <div class="section_title light">
-          <h2 class="section_title_bg">experience</h2>
-          <h3 class="section_title_main">experience</h3>
-        </div>
-      </div>
-    </section>
-    <section id="works">
-      <div class="wrapper" data-aos="fade-up">
-        <div class="section_title">
-          <h2 class="section_title_bg">works</h2>
-          <h3 class="section_title_main">works</h3>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-
-      <div class="wrapper" data-aos="fade-up">
-        <div class="section_title">
-          <h2 class="section_title_bg">contact</h2>
-          <h3 class="section_title_main">contact</h3>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script src="./js/jquery.min.js"></script>
-  <script src="https://unpkg.com/typeit@8.5.2/dist/index.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800
-    });
-  </script>
-  <script src="./js/main.js"></script>
-</body>
-
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.5.2/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
