@@ -309,7 +309,7 @@ section {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-top: 60px;
+    margin-top: 80px;
     .box1 {
       width: 400px;
       pointer-events: none;
@@ -351,7 +351,7 @@ section {
 .experience {
   color: #fff;
   .section_content {
-    margin-top: 60px;
+    margin-top: 80px;
     padding-left: 32px;
   }
   &_box {
@@ -407,12 +407,81 @@ section {
 #works {
   min-height: 100vh;
   background-color: #f1f3f6;
+  .section_content {
+    margin-top: 80px;
+    .filters {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          text-transform: uppercase;
+          margin-right: 32px;
+          font-weight: 500;
+          cursor: pointer;
+          position: relative;
+          &::after {
+            background: orange;
+            bottom: 0;
+            content: "";
+            height: 0;
+            left: 0;
+            opacity: 0.5;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            z-index: -1;
+          }
+          &.active {
+            &::after {
+              height: 20px;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #contact {
   min-height: 100vh;
+  .section_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    .contact {
+      &_box {
+        text-align: center;
+        width: 360px;
+
+        &_icon {
+          text-align: center;
+          i {
+            font-size: 32px;
+            color: orange;
+          }
+        }
+        &_title {
+          font-size: 18px;
+          text-transform: uppercase;
+          margin: 16px 0 8px;
+          font-weight: 500;
+        }
+        &_content {
+          font-weight: 300;
+          opacity: 0.7;
+          a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
   form {
-    margin-top: 100px;
+    margin-top: 60px;
     .form_box {
       display: flex;
       align-items: center;
