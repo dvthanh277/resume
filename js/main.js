@@ -27,7 +27,8 @@ $(document).ready(function () {
       }
     });
   });
-
+  $("#old").text(new Date().getFullYear() - 1996);
+  $("#years-ex").text(new Date().getFullYear() - 1996 - 24);
   new TypeIt("#text_typing", {
     speed: 120,
     loop: true,

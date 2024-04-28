@@ -25,6 +25,7 @@
           <li><a class="active" href="#home">Home</a></li>
           <li><a href="#about">About me</a></li>
           <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
           <li><a href="#works">WORKS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -87,13 +88,22 @@
             <div class="box2">
               <p class="text_title">Hello !!!</p>
               <p class="text">
-                I’m Do Van Thanh, 27 years old. I live in Vung Tau, Vietnam. I
-                graduated from Ba Ria Vung Tau University. I’m working as a
-                Frontend Developer with over 3 years experience developing
+                I’m Do Van Thanh, <span id="old">27</span> years old. I live in
+                Vung Tau, Vietnam. I graduated from Ba Ria Vung Tau University.
+                I’m working as a Frontend Developer with over
+                <span id="years-ex">3</span> years experience developing
                 different websites, apps and implementing them — from landing
                 pages to big projects, mostly using
                 HTML/CSS/Javascript/ReactJS...
               </p>
+              <a
+                href="./cv/Do_Van_Thanh_CV_Frontend_Developer.pdf"
+                download
+                class="primary_button download_cv_btn"
+              >
+                <i class="fa-solid fa-download"></i>
+                <span>Download CV</span>
+              </a>
             </div>
           </div>
         </div>
@@ -113,12 +123,13 @@
                 <p class="main_des">Main responsibilities:</p>
                 <ul>
                   <li>
-                    - Development website of Korea. Build a Web page from Zeplin
-                    design using Html, Css, Javascript, Sass.
+                    - Development Website, App of Korea. Build a Website from
+                    Zeplin, Figma, Photoshop design using Html, Css, Javascript,
+                    Sass, Vanilla JavaScript, Json, ReactJs, React-Native.
                   </li>
                   <li>
-                    - Connect Api to update data and perform functions on the
-                    website using Vanilla JavaScript, Json
+                    - Integration API to update data and perform functions on
+                    the website, app.
                   </li>
                 </ul>
               </div>
@@ -131,8 +142,13 @@
                 <p class="main_des">Main responsibilities:</p>
                 <ul>
                   <li>
-                    - Develop user interface using AngularJs framework, Html,
-                    Css, Jquery, Sass, Bootstrap, Json.
+                    - Development of internal website & software of Hutchison
+                    Ports.
+                  </li>
+                  <li>
+                    - Integration API to update data and perform functions user
+                    interface using AngularJs framework, Html, Css, Jquery,
+                    Sass, Bootstrap, Json.
                   </li>
                   <li>- Support users, update and fix bugs.</li>
                 </ul>
@@ -147,8 +163,8 @@
                 <ul>
                   <li>
                     - Development landing page website of Japan. Build a Web
-                    page from Photoshop (Psd) files using pug, sass, jquery,
-                    php.
+                    page from Photoshop (Psd) files using Html/Pug, Css/Sass,
+                    Js/Jquery, PHP.
                   </li>
                   <li>
                     - Update to the Web page the images as well as the text
@@ -170,6 +186,43 @@
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="wrapper" data-aos="fade-up">
+          <div class="section_title light">
+            <h2 class="section_title_bg">skills</h2>
+            <h3 class="section_title_main">skills</h3>
+          </div>
+          <div class="section_content">
+            <div class="skills_box">
+              <div class="skills_box_icon">
+                <i class="fa-solid fa-laptop"></i>
+              </div>
+              <h3 class="title">Work</h3>
+              <p class="text">
+                - Experience in about Html5 (Pug), Css3 (Sass/Scss), JavaScript,
+                jQuery, Bootstrap, Ajax, Json, Vanilla JavaScript<br />
+                - Knowledge base of Asp.net, MySql, AngularJS, ReactJS,
+                React-Native - Experience in task management on Redbooth,
+                Jira<br />
+                - Experience in source code management on Github, Bitbucket<br />
+                - Experience use photoshop to design website, edit images.<br />
+                - English writing, reading and understanding documents<br />
+              </p>
+            </div>
+            <div class="skills_box">
+              <div class="skills_box_icon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <h3 class="title">Personal</h3>
+              <p class="text">
+                - Honest, friendly, sociable, careful, focused at work. <br />
+                - Can proactively learn and gain necessary skills current or
+                future projects.
+              </p>
             </div>
           </div>
         </div>
@@ -253,7 +306,9 @@
             />
             <input type="hidden" name="_captcha" value="false" />
 
-            <button type="submit" id="submit_form">Send message</button>
+            <button type="submit" id="submit_form" class="primary_button">
+              Send message
+            </button>
           </form>
         </div>
       </section>

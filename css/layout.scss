@@ -7,6 +7,30 @@ html {
   font-family: "Lexend", sans-serif;
 }
 
+.primary_button {
+  color: #fff;
+  border: solid 3px rgb(233, 151, 0);
+  border-radius: 8px;
+  background: rgb(233, 151, 0);
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: rgb(233, 151, 0);
+    transition: all 0.3s;
+  }
+}
+
 header.desktop {
   padding: 40px 60px;
   width: 300px;
@@ -341,6 +365,19 @@ section {
         font-weight: 200;
       }
     }
+    .download_cv_btn {
+      border-width: 1px;
+      padding: 10px;
+      text-decoration: none;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      span {
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -400,6 +437,42 @@ section {
       li {
         font-weight: 200;
       }
+    }
+  }
+}
+
+#skills {
+  min-height: 100vh;
+  background-color: #566068;
+}
+.skills {
+  color: #fff;
+  .section_content {
+    margin-top: 80px;
+    padding-left: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &_box {
+    position: relative;
+    border-radius: 4px;
+    padding: 32px;
+    border: 1px solid rgb(187, 187, 187);
+    flex: 1;
+    &_icon {
+      text-align: center;
+      font-size: 32px;
+    }
+    .title {
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .text {
+      font-weight: 200;
+      line-height: 24px;
     }
   }
 }
@@ -512,29 +585,6 @@ section {
       margin-top: 30px;
       height: 200px;
       resize: none;
-    }
-    #submit_form {
-      color: #fff;
-      border: solid 3px rgb(233, 151, 0);
-      border-radius: 8px;
-      background: rgb(233, 151, 0);
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      text-align: center;
-      width: 100%;
-      font-size: 16px;
-      padding: 12px 24px;
-      text-transform: uppercase;
-      cursor: pointer;
-      margin-top: 30px;
-      transition: all 0.3s;
-
-      &:hover {
-        background-color: #fff;
-        color: rgb(233, 151, 0);
-        transition: all 0.3s;
-      }
     }
   }
 }
